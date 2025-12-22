@@ -30,11 +30,12 @@ main {
 }
 #header {
   width: 100%;
-  aspect-ratio: 985 / 150; 
+  aspect-ratio: 984 / 150; 
   background-color: #FF6A00;
   background-image: url(/assets/banner.png);
   background-size: cover;
   background-position: center;
+  image-rendering: pixelated;
 }
 ul {
   padding-left: 15px;
