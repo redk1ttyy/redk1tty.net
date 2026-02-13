@@ -1,68 +1,37 @@
+:root {
+	--background: #151515;
+    --text: #e8e8e8;
+    --primary: #ffd400;
+    --primary-bg: #ffd40055;
+}
 body {
-	min-width: 400px;
-	max-width: 600px;
-	background: #282828;
-	font-family: sans-serif;
-	color: #e8e8e8;
-	margin: auto;
-	padding: 0 15px;
+    color: var(--text);
+    background: var(--background);
+    font-size: 1.2em;
+    font-family: "Consolas", monospace;
+    text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-a:link {
-	color: #ffd400;
-	background-color: transparent;
+a {
+	color: var(--primary);
+	background-color: var(--primary-bg);
 	text-decoration: none;
 	font-weight: normal;
 	border: thin solid transparent;
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0,0.8,0,1);
 }
-a:visited {
-	color: #ffd400;
-	background-color: transparent;
-	text-decoration: none;
-	font-weight: normal;
-	border: thin solid inherit;
-}
-
 a:hover {
-	color: #282828;
-	background-color: #ffd400;
-	text-decoration: none;
-	border: thin solid #ffd400;
+	color: var(--background);
+	background-color: var(--primary);
+	border: thin solid var(--primary);
 }
-
-a#title {
-	color: #e8e8e8;
-	font-weight: bold;
-	border: thin solid transparent;
-}
-
-a:hover#title {
-	color: white;
-	font-weight: bold;
-	background: none;
-	border: thin solid transparent;
-}
-
-header {
-	background: #191919;
-	background: linear-gradient(180deg,rgba(25, 25, 25, 1) 0%, rgba(40, 40, 40, 1) 100%);
-	padding: 10px;
-}
-
-footer {
-	background: #191919;
-	background: linear-gradient(180deg,rgba(40, 40, 40, 1) 0%, rgba(25, 25, 25, 1) 100%);
-	padding: 10px;
-}
-
-#cover {
-	width: 100%;
-}
-
-p {
-	padding: 0px 10px;
-}
-
-.center {
-	text-align: center;
+.container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
