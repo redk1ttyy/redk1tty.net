@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'icon';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("/assets/icons.woff2") format("woff2"), url("/assets/icons.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'logo';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("/assets/logos.woff2") format("woff2"), url("/assets/logos.ttf") format("truetype");
+}
+
+.icon-play, .icon-pause, .icon-volume {
+    font-family: 'icon';
+    font-style: normal;
+}
+.icon-html5, .icon-css3, .icon-js, .icon-python {
+	font-family: 'logo';
+    font-style: normal;
+	font-weight: normal;
+}
+.icon-play::before {
+    content: "\f04b";
+}
+.icon-pause::before {
+    content: "\f04c";
+}
+.icon-volume.high::before {
+    content: "\f028";
+}
+.icon-volume.low::before {
+    content: "\f027";
+}
+.icon-volume.muted::before {
+    content: "\f6a9";
+}
+.icon-html5::before {
+    content: "\f13b";
+}
+.icon-css3::before {
+    content: "\f13c";
+}
+.icon-js::before {
+    content: "\f3b8";
+}
+.icon-python::before {
+    content: "\f3e2";
+}

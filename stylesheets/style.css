@@ -1,0 +1,191 @@
+/* ====================================================================================================================================== */
+/* font import */
+@import url('/fonts/Ubuntu.css');
+@import url('/fonts/Ubuntu_Mono.css');
+/* ====================================================================================================================================== */
+
+/* colors borrowed from https://puteri.ng/ */
+:root {
+    --background: 18, 19, 20;
+    --middleground: 31, 33, 41;
+    --foreground: 238, 238, 238;
+    --accent: 255, 192, 23;
+}
+
+/* basics */
+body {
+    margin: 0;
+    background: rgb(var(--background));
+    height: 100vh;
+    color: rgb(var(--foreground));
+    font-family: "Ubuntu", sans-serif;
+    accent-color: rgb(var(--accent));
+}
+a {
+    color: rgb(var(--accent));
+    background-color: rgba(var(--accent), 0.33);
+    text-decoration: none;
+    font-weight: normal;
+    border: thin solid transparent;
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0,0.8,0,1);
+}
+a:hover {
+    color: rgb(var(--background));
+    background-color: rgb(var(--accent));
+    border: thin solid rgb(var(--accent));
+    transition: none;
+}
+
+/* miscellaneous */
+.container {
+    max-width: 50%;
+    margin: auto;
+    padding: 15px 0 65px 0;
+    text-transform: lowercase;
+}
+&:has(#recapitalization:checked){& .container{text-transform:none!important}}
+.unimportant {
+    color: rgba(var(--foreground), 0.5);
+}
+.header {
+    display: flex;
+    gap: 10px;
+	position: absolute;
+	width: 50%;
+	top: 0;
+	padding: 5px;
+}
+.header details {
+    width: 100%;
+}
+.header details > ul {
+    padding: 8px;
+    padding-left: 20px;
+}
+details li ul li {
+    padding: 0 5px;
+}
+.header details#options {
+    text-align: right;
+}
+.header details#options summary {
+    direction: rtl;
+}
+.header details#options .container {
+    margin: 1em 0;
+    padding: 8px;
+    padding: 8px;
+    max-width: 100%;
+}
+.clickable {
+    border: 1px dashed rgba(var(--foreground), 0.5);
+}
+details > ul, details > div.container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.33) rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8) rgba(255, 255, 255, 0.33);
+    background-color: rgba(var(--background), 0.8);
+    backdrop-filter: blur(4px);
+}
+.avatar {
+	float: right;
+	width: 128px;
+	box-shadow: rgb(var(--accent)) 0.4em 0.4em;
+	margin: 5px;
+	margin: 0 15px;
+	margin-top:25px;
+}
+footer {
+	text-align: center;
+	zoom: 75%;
+}
+footer a {
+	color: inherit;
+	background: none;
+	text-decoration: underline;
+	border: 0;
+	font-weight: normal;
+	transition: 0;
+}
+footer a:hover {
+	color: rgba(var(--foreground), 0.8);
+	border: 0;
+	background: none;
+	text-decoration: underline;
+	font-weight: normal;
+	transition: 0;
+}
+/* media player for people without javascript */
+audio {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -15px);
+    width: 75%;
+    filter: hue-rotate(230deg) saturate(5);
+}
+audio:hover {
+    filter: sepia(1) hue-rotate(10deg) saturate(5);
+}
+
+/* media player for people with javascript */
+#mediaPlayer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.33) transparent transparent transparent;
+    background-color: rgba(var(--background), 0.33);
+    backdrop-filter: blur(4px);
+    color: #eeeeee;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+    zoom: 110%;
+}
+#mediaPlayer .container {
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+.controls {
+    display: flex;
+    gap: 6px;
+}
+.controls button {
+    background: none;
+    font-size: 24px;
+    border: none;
+    width: 24px;
+    height: 24px;
+    color: rgb(var(--foreground));
+    transform: translateY(-3px);
+}
+.controls button:hover {
+	transform: translateY(-3px) scale(1.1);
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+#progress {
+    flex: 1;
+}
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+}
