@@ -142,7 +142,7 @@ audio:hover {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.33) transparent transparent transparent;
-    background-color: rgba(var(--background), 0.33);
+    background-color: rgba(var(--background), 0.8);
     backdrop-filter: blur(4px);
     color: #eeeeee;
     font-family: "Ubuntu Mono", monospace;
