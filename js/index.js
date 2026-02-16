@@ -11,18 +11,12 @@ const ageElement = document.getElementById("age");
 let currentFormat = "normal";
 
 function nerdFormat() {
-	const now = new Date();
-	let years = now.getFullYear() - birthDate.getFullYear();
-	const hasHadBirthdayThisYear =
-    now.getMonth() > birthDate.getMonth() ||
-    (now.getMonth() === birthDate.getMonth() &&
-    now.getDate() >= birthDate.getDate());
+	const diffMs = now - birthDate;
 
-    if (!hasHadBirthdayThisYear) {
-        years--;
-    }
-	const secondsOld = Math.floor((Date.now() + nextBirthday.getTime()) / 1000);
-    ageElement.textContent = `${years}.${secondsOld}-year-old`;
+	const diffDays = diffMs / (1000 * 60 * 60 * 24);
+
+	const nerdYears = diffDays / 365.2425;
+    ageElement.textContent = `${nerdYears.toFixed(10)}-year-old`;
 }
 
 function normalFormat() {

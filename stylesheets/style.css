@@ -95,6 +95,10 @@ details > ul, details > div.container {
 	margin: 5px;
 	margin: 0 15px;
 	margin-top:25px;
+	transition: box-shadow 0.2s ease-in-out;
+}
+.avatar:hover {
+	box-shadow: rgba(var(--accent)) 0.2em 0.2em;
 }
 footer {
 	text-align: center;
