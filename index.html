@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/stylesheets/icons.css">
 
     <!-- javascript -->
-    <script src="/js/index.js" defer></script>
     <script src="/js/mediaPlayer.js" defer></script>
   </head>
   <body>
@@ -28,15 +27,9 @@
                 <li>Click it to be taken to the specified page.</li>
               </ul>
             </li>
-            <li><abbr title="defines an abbreviation or an acronym">This</abbr> indicates words/phrases some people might not understand.
+            <li><abbr title="defines an abbreviation or an acronym">This</abbr> indicates words/phrases that might need clarification.
               <ul>
-                <li>Hover over it for the intended definition.</li>
-              </ul>
-            </li>
-            <li id="clickableTextInfo" style="display: none;"><span class="clickable" onclick="if (this.textContent == '&lt;span class=&quot;clickable&quot; />') {this.textContent = 'This';} else {this.textContent = '&lt;span class=&quot;clickable&quot; />'};">This</span> indicates "clickable" text.
-              <ul>
-                <li>Clicking on clickable text will result in an action. Said action is different depending on what you click.</li>
-                <li>Clickable text requires Javascript. As such, clicking on it without JavaScript enabled will do nothing, and users with JavaScript disbaled will not see this indicator.</li>
+                <li>Hover over it for additional info.</li>
               </ul>
             </li>
           </ul>
@@ -51,8 +44,8 @@
       </div>
 	  <img class="avatar" src="/assets/images/avatar.png" alt="My avatar" title="art by wormstarrcat">
       <h1>redk1tty.net</h1>
-      <p>Hi! I'm Lexi (otherwise known as redk1tty), and I'm a <span id="age" onclick="toggleAgeFormat()">16-year-old</span> <abbr title="a person who is interested in modern technology and enjoys using it">technophile</abbr>.</p>
-      <p>Besides that, I am <span class="unimportant">(to nobody's surprise)</span> a <abbr title="HTML/CSS/JS, Python">programmer</abbr>, and <span class="unimportant">(more surprisingly)</span> a graphic designer, <abbr title="an artist that draws both digitally and traditionally">mixed-media artist</abbr> and former musician. We do not talk about the 4 digit psuedonym.</p>
+      <p>Hi! I'm Lexi (otherwise known as redk1tty), and I'm a sophomore that enjoys using technology.</p>
+      <p>Besides that, I am <span class="unimportant">(to nobody's surprise)</span> a <abbr title="HTML/CSS/JS, PHP, Python">programmer</abbr>, and <span class="unimportant">(more surprisingly)</span> a graphic designer, <abbr title="an artist that draws both digitally and traditionally">mixed-media artist</abbr> and former musician. We do not talk about the 4 digit psuedonym.</p>
       <p>This site was created on Neocities back in 2022, lead to because of an issue with my old ISP which forbid me from accessing certain sites. This site would since go from <a href="https://lexio.neocities.org">being hosted on Neocities</a> to <a href="https://lexio.buzz">my first domain</a> all the way to the site you're on right now.</p>
 	  <p>If you really want to, you can join my <a href="https://discord.gg/DzyUDVGxER">Discord server</a>, which you can also use to contact me. Or you can just add <a href="https://discord.com/users/268503119892185088">redk1tty</a>. I don't mind.</p>
 	  <br><br>
@@ -62,7 +55,7 @@
 	  </footer>
     </div>
 
-    <!--  media player for people with javascript -->
+    <!--  media player -->
     <div id="mediaPlayer" style="display: none;"> <script>document.getElementById('mediaPlayer').style.display = "block";</script>
       <div class="container">
         <div class="controls">
@@ -83,10 +76,5 @@
 
       <audio id="audio" src="/assets/music/Oliver_Buckland-backroom_labyrinth.mp3" autoplay loop></audio>
     </div>
-
-    <!--  media player for people without javascript -->
-    <noscript>
-      <audio id="noscriptAudio" src="/assets/music/Oliver_Buckland-backroom_labyrinth.mp3" autoplay loop controls></audio>
-    </noscript>
   </body>
 </html>
