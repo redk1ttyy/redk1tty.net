@@ -1,5 +1,5 @@
 # To-Do
-- [ ] Mobile support
+- [x] Mobile support
 - [ ] Reword homepage
 - [ ] Add themes
   - [ ] Adaptive [Default]

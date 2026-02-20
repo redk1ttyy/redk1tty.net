@@ -4,14 +4,6 @@
 @import url('/fonts/Ubuntu_Mono.css');
 /* ====================================================================================================================================== */
 
-/* colors borrowed from https://puteri.ng/ */
-:root {
-    --background: 18, 19, 20;
-    --middleground: 31, 33, 41;
-    --foreground: 238, 238, 238;
-    --accent: 255, 192, 23;
-}
-
 /* basics */
 body {
     margin: 0;
@@ -180,4 +172,21 @@ footer a:hover {
     align-items: center;
     gap: 6px;
     font-size: 18px;
+}
+
+/* mobile stuff */
+@media (max-width:64rem) {
+	.container {
+		max-width: 100%;
+		padding: 25px;
+	}
+	.header {
+		width: 85%;
+	}
+	#mediaPlayer .container {
+		max-width: 100%;
+	}
+	.volume {
+		display: none;
+	}
 }
