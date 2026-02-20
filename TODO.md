@@ -1,0 +1,11 @@
+# To-Do
+- [ ] Mobile support
+- [ ] Reword homepage
+- [ ] Add themes
+  - [ ] Adaptive [Default]
+    - [ ] Adapted [Light]
+    - [x] Adapted [Dark]
+  - [ ] Scheme
+- [ ] Persona selector
+  - [x] lexi [Default]
+  - [ ] Catrat
