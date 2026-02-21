@@ -2,6 +2,7 @@ if (localStorage.getItem("recapitalization_enabled") === "true") {
   document.getElementById("recapitalization").checked = true;
 }
 if (localStorage.getItem("persona_selected")) {
+	document.getElementById("persona").value = localStorage.getItem("persona_selected");
     document.getElementById("avatar").src = `/assets/avatars/${localStorage.getItem("persona_selected")}.png`;
 	if (localStorage.getItem("persona_selected") == "human") {
 		document.getElementById("avatar").title = "Art by wormstarrcat";
