@@ -97,7 +97,7 @@ details > ul, details > div.container {
 	cursor: grab;
 }
 #avatar:hover {
-	box-shadow: rgba(var(--accent)) 0.2em 0.2em;
+	box-shadow: rgba(var(--accent)) 0.25em 0.25em;
 }
 footer {
 	text-align: center;
