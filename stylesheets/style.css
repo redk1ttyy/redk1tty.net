@@ -41,9 +41,7 @@ a:hover {
     max-width: 50%;
     margin: auto;
     padding: 15px 0 65px 0;
-    text-transform: lowercase;
 }
-&:has(#recapitalization:checked){& .container{text-transform:none!important}}
 .unimportant {
     color: rgba(var(--foreground), 0.5);
 }
