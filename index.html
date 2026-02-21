@@ -10,13 +10,14 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="/stylesheets/style.css">
-	<link rel="stylesheet" href="/stylesheets/themes/adaptive.css">
+	<link rel="stylesheet" href="/stylesheets/human.css" id="personaStylesheet">
     <link rel="stylesheet" href="/stylesheets/icons.css">
 
     <!-- javascript -->
     <script src="/js/mediaPlayer.js" defer></script>
+	<script src="/js/options.js" defer></script>
   </head>
-  <body style="--accent: 255, 192, 23;">
+  <body>
     <!-- page content -->
     <div class="container" id="content">
 	      <div class="header">
@@ -38,12 +39,13 @@
         <details id="options">
           <summary>options</summary>
           <div class="container">
-            <label for="recapitalization" aria-label="Normalizes text capitalization when enabled."><input type="checkbox" id="recapitalization" name="recapitalization">Disable forced uncapitalization</label>
+			<label for="persona" title="Changes the character used on the page." id="personaOption" style="display: none;">Persona: <select name="persona" id="persona"><option value="human">Human</option><option value="catrat">Catrat</option></select></label>
+            <label for="recapitalization" title="Normalizes text capitalization when enabled."><input type="checkbox" id="recapitalization" name="recapitalization"> Disable forced uncapitalization</label>
             <small class="unimportant" style="display: block; margin-top: 5px;">Options will not save without JavaScript.</small>
           </div>
         </details>
       </div>
-	  <img class="avatar" src="/assets/images/avatar.png" alt="My avatar" title="art by wormstarrcat">
+	  <img id="avatar" src="/assets/avatars/human.png" alt="My avatar" title="art by wormstarrcat">
       <h1>redk1tty.net</h1>
       <p>Hi! I'm Lexi (otherwise known as redk1tty), and I'm a sophomore that enjoys using technology.</p>
       <p>Besides that, I am <span class="unimportant">(to nobody's surprise)</span> a <abbr title="HTML/CSS/JS, PHP, Python">programmer</abbr>, and <span class="unimportant">(more surprisingly)</span> a graphic designer, <abbr title="an artist that draws both digitally and traditionally">mixed-media artist</abbr> and former musician. We do not talk about the 4 digit psuedonym.</p>

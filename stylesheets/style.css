@@ -4,6 +4,13 @@
 @import url('/fonts/Ubuntu_Mono.css');
 /* ====================================================================================================================================== */
 
+/* colors borrowed from https://puteri.ng/ */
+:root {
+	--background: 18, 19, 20;
+	--middleground: 31, 33, 41;
+	--foreground: 238, 238, 238;
+}
+	
 /* basics */
 body {
     margin: 0;
@@ -80,7 +87,7 @@ details > ul, details > div.container {
     background-color: rgba(var(--background), 0.8);
     backdrop-filter: blur(4px);
 }
-.avatar {
+#avatar {
 	float: right;
 	width: 128px;
 	box-shadow: rgb(var(--accent)) 0.4em 0.4em;
@@ -89,7 +96,7 @@ details > ul, details > div.container {
 	transition: box-shadow 0.2s ease-in-out;
 	cursor: grab;
 }
-.avatar:hover {
+#avatar:hover {
 	box-shadow: rgba(var(--accent)) 0.2em 0.2em;
 }
 footer {
@@ -111,6 +118,10 @@ footer a:hover {
 	text-decoration: underline;
 	font-weight: normal;
 	transition: 0;
+}
+select {
+	width: 100px;
+	filter: invert(1);
 }
 
 /* media player */
