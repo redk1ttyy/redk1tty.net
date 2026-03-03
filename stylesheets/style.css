@@ -121,7 +121,25 @@ select {
 	width: 100px;
 	filter: invert(1);
 }
-
+abbr {
+	cursor: help;
+}
+abbr:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+}
+a.abbr {
+	color: rgba(var(--accent), 0.9);
+	font-weight: normal;
+	border: none;
+	text-decoration: underline dotted;
+	background: none;
+	cursor: help;
+}
+a.abbr:hover {
+	color: rgba(var(--accent), 1);
+	text-decoration: underline;
+}
 /* media player */
 #mediaPlayer {
     position: fixed;
