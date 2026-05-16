@@ -14,9 +14,10 @@ a {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(255,229,245,0.5);
 }
-a:hover {
+a:focus, a:hover {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(255,229,245,0.8);
+  outline: none;
 }
 hr {
   border: 1px solid rgba(255,229,245,0.2);
@@ -30,11 +31,5 @@ hr {
 .btn:focus, .btn:hover {
   filter: sepia(0);
   border-bottom: none;
-}
-.center {
-  filter: sepia(1) saturate(2) hue-rotate(-80deg);
-  text-align: center;
-  margin-top: 45px;
-  zoom: 80%;
-  line-height: 25px;
+  outline: none;
 }
