@@ -14,7 +14,8 @@ a {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(255,229,245,0.5);
 }
-a:focus, a:hover {
+a:focus,
+a:hover {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(255,229,245,0.8);
   outline: none;
@@ -23,13 +24,24 @@ hr {
   border: 1px solid rgba(255,229,245,0.2);
   margin-bottom: 10px;
 }
+.buttons {
+  display: flex;
+  align-content: center;
+  gap: 5px;
+}
 .btn {
-  filter: sepia(1) saturate(2) hue-rotate(-80deg);
   border-bottom: none;
   image-rendering: pixelated;
+  transition: opacity 0.2s ease;
 }
-.btn:focus, .btn:hover {
-  filter: sepia(0);
-  border-bottom: none;
+.btn:focus,
+.btn:hover {
   outline: none;
+}
+.buttons:has(.btn:hover) .btn {
+  opacity: 0.5;
+  border-bottom: none;
+}
+.buttons:has(.btn:hover) .btn:hover {
+  opacity: 1;
 }
