@@ -29,7 +29,7 @@ a.nohover:hover {
   border-bottom: none;
 }
 .webcam:hover {
-  outline: 2px solid rgba(255,229,245,0.2);
+  outline: 2px solid rgba(255,229,245,0.5);
 }
 hr {
   border: 1px solid rgba(255,229,245,0.2);
