@@ -9,6 +9,9 @@
   padding: 10px;
   padding-top: 0px;
 }
+h2 {
+  margin-top: 10px;
+}
 a {
   color: rgb(255,229,245);
   text-decoration: none;
@@ -19,6 +22,14 @@ a:hover {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(255,229,245,0.8);
   outline: none;
+}
+a.nohover,
+a.nohover:focus,
+a.nohover:hover {
+  border-bottom: none;
+}
+.webcam:hover {
+  outline: 2px solid rgba(255,229,245,0.2);
 }
 hr {
   border: 1px solid rgba(255,229,245,0.2);
