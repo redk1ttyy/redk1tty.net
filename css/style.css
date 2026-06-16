@@ -74,7 +74,7 @@ a:hover {
 	border: none;
 	background: none;
 	image-rendering: pixelated;
-	transition: 0.5s cubic-bezier(0,0.8,0,1);
+	transition: 0.4s, transform 0.5s cubic-bezier(0,0.8,0,1);
 	zoom: 91%;
 }
 .btn:focus,
@@ -96,4 +96,5 @@ body:has(.btn:hover) h2, body:has(.btn:hover) .card {
 	opacity: 1;
 	transform: scale(1.5);
 	z-index: 999;
+	transition: 0.5s cubic-bezier(0,0.8,0,1);
 }
