@@ -94,7 +94,34 @@ body:has(.btn:hover) h2, body:has(.btn:hover) .card {
 }
 .buttons:has(.btn:hover) .btn:hover {
 	opacity: 1;
-	transform: scale(1.5);
+	transform: scale(2);
 	z-index: 999;
 	transition: 0.5s cubic-bezier(0,0.8,0,1);
+}
+.btn:first-child {
+	cursor: copy;
+}
+.copy-wrapper {
+    position: relative;
+	z-index: 999;
+}
+#pointer {
+    position: absolute;
+    top: 100%;       /* directly below button */
+    left: 32px;         /* align with left edge */
+    margin-top: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+	zoom: 91%;
+    image-rendering: pixelated;
+	transition: 0.5s cubic-bezier(0,0.8,0,1), opacity 0.2s;
+	opacity: 0.5;
+}
+.copy-wrapper:has(.btn:first-child:hover) #pointer {
+    top: calc(100% + 15px);
+	opacity: 1;
+}
+.buttons:has(.btn:not(:first-child):hover) #pointer {
+    top: 100%;
+	opacity: 0;
 }
