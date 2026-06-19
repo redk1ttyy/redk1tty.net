@@ -18,7 +18,7 @@
 </div>
 <script>
 document.getElementById("self").removeAttribute("href"); 
-document.getElementById("self").onclick = "copy()";
+document.getElementById("self").onclick = copy;
 document.getElementById("pointer").src = "/assets/click_to_copy.png";
 function copy() {
 	navigator.clipboard.writeText('<a href="https://redk1tty.net/"><img src="https://redk1tty.net/assets/button.png"></a>');
